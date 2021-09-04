@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="龜兔賽跑"
+        android:textSize="22sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stRabbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兔子"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/stTitle"
+        app:layout_constraintTop_toBottomOf="@+id/stTitle" />
+    <SeekBar
+        android:id="@+id/sbRabbit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@+id/stRabbit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stRabbit" />
+
+    <TextView
+        android:id="@+id/stTurtle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="烏龜"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/stRabbit"
+        app:layout_constraintTop_toBottomOf="@+id/stRabbit" />
+    <SeekBar
+        android:id="@+id/sbTurtle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@+id/stTurtle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stTurtle" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:text="開始"
+        android:layout_width="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stTurtle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

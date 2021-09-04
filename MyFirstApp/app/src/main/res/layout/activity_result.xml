@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:id="@+id/llWeight"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/stResult"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Resu"
+            android:textSize="48sp"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="57dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_marginTop="150dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btReturn_Click"
+            android:text="@string/str_return"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>
