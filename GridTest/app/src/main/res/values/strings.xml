@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GridTest</string>
+    <string-array name="region_icon_list">
+        <item >@drawable/ic_baseline_ads_click_24</item>
+        <item >@drawable/ic_baseline_align_horizontal_center_24</item>
+        <item >@drawable/ic_baseline_anchor_24</item>
+        <item >@drawable/ic_baseline_anchor_24</item>
+        <item >@drawable/ic_baseline_anchor_24</item>
+    </string-array>
+</resources>
